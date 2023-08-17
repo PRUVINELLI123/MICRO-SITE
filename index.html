@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Pesssoal</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Site Pessoal</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <header>
-        <img src="img/logo.pnj.jpg" id="Logo" width="250px">
+        <img src="img/logo.pnj.jpg" alt="logo do site pessoal"  id="logo" />
         <h1>Pedro Pruvinelli</h1>
     </header>
 
     <main>
-
         <div class="musicas">
             <h2>Letra da Música</h2>
             <p>I'm good, yeah, I'm feelin' alright
@@ -50,39 +49,58 @@
                 And wherever it takes me, I'm down for the ride
                 Baby, don't you know I'm good? Yeah, I'm feelin' alright</p>
 
-                <span><a href="https://www.youtube.com/watch?v=eWhZryVNMQE">Link do Youtube</a>
-                <span><a href="vhttps://open.spotify.com/intl-pt/track/4uUG5RXrOk84mYEfFvj3cK">Link Spotify</a></span>
+               <span><a href="https://www.youtube.com/watch?v=3VEKhXY_JFY" target="_blank">Link do youtube</a></span>
+               <span><a href="https://open.spotify.com/intl-pt/track/4uUG5RXrOk84mYEfFvj3cK" target="_blank">Link do Spotify</a></span>          
         </div>
 
         <div class="comidas">
+            <h2>Comidas Favoritas</h2>
             <ul>
+                <li><img src="img/pizza.pnj.jpg" alt="imagem pizza" width="215px"></li>
                 <li><img src="img/lasanha.pnj.webp" alt="imagem lasanha" width="225px"></li>
-                <li><img src="img/pizza.pnj.jpg" alt="imagem pizza" width="225px"></li>
-                <li><img src="img/Xis.pnj.jpeg" alt="imgaem Xburguer" width="225px"></li>
+                <li><img src="img/Xis.pnj.jpeg" alt="imagem x-burguer" width="225px"></li>
             </ul>
         </div>
 
-        <div class="Lazer">
+        <div class="lazer-images">
             <h2>Lazer</h2>
-            <p>Viajar para o Nordeste</p>
-            <img src="img/nordeste.jpg" width="225px">
 
-            <p>Cinema</p>
-            <img src="img/cinema.jpg" width="225px">
+            <!-- Imagem da Viagem -->
+            <figure>
+                <img src="img/nordeste.jpg" width="200px" alt="Viagem" >
+                <figcaption>Viagem</figcaption>
+            </figure>
 
-            <p>Praia</p>
-            <img src="img/praia.jpg" width="225px">
+            <!-- Imagem do Cinema -->
+            <figure>
+                <img src="img/cinema.jpg" width="200px" alt="Cinema">
+                <figcaption>Cinema</figcaption>
+            </figure>
+
+            <!-- Imagem da Praia -->
+            <figure>
+                <img src="img/praia.jpg" width="200px" alt="Praia">
+                <figcaption>Praia</figcaption>
+            </figure>
+        </div>
 
     </main>
-
+    
     <footer>
-        &copy; Criado por Pedro Pruvinelli Urrutia
-        <img src="img/insta.jpg" width="20px" class="instagram">
-        <p>@pedro_pruvinelli</p>
-        
-        <img src="img/whatsapp.pnj.webp" width="20px" class="Whatsapp">
-        <p>(51) 996454550</p>
+        <div class="social-media">
+            <div class="social-item">
+                <img src="img/insta.jpg" width="20px" class="social-icon">
+                <p>@pedro_pruvinelli</p>
+            </div>
+            <div class="social-item">
+                <img src="img/whats.png" width="80px" class="social-icon">
+                <p>(51) 996454550</p>
+            </div>
+        </div>
+        <p>&copy Criado por Pedro Pruvinelli</p>
     </footer>
+    
+
     
 </body>
 </html>

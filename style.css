@@ -1,26 +1,35 @@
-*{
+/* Reset de Estilos */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estilos Gerais */
+
+/* Tipografia padrão */
 body {
-    font-family: arial sans-serif;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #fff;
     color: #333;
+    margin: 0;
+    padding: 0;
 }
+
+/* Links */
 a {
     text-decoration: none;
     color: #007bff;
-    display: flex;
-    flex-direction: column;
+    transition: color 0.3s ease-in-out;
 }
 
 a:hover {
-    text-decoration: none;
+    text-decoration: underline;
+    color: #0056b3;
 }
 
+/* Cabeçalho */
 header {
     background-color: #007bff;
     color: #fff;
@@ -28,37 +37,48 @@ header {
     padding: 20px 0;
 }
 
+/* Logo */
 #logo {
     max-width: 100px;
     height: auto;
 }
 
+/* Título Principal */
 h1 {
-    font-size: 40px;
+    font-size: 2.5rem;
     margin-top: 10px;
 }
 
+/* Conteúdo Principal */
 main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-.musicas, .comidas, .lazer {
+/* Seções */
+.musicas,
+.comidas,
+.lazer {
     background-color: #fff;
     padding: 20px;
     margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Títulos Secundários */
 h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
     margin-bottom: 15px;
 }
 
+/* Parágrafos */
 p {
     margin-bottom: 15px;
 }
 
+/* Listas */
 ul {
     list-style: none;
     display: flex;
@@ -66,18 +86,74 @@ ul {
     padding: 0;
 }
 
+/* Imagens */
 img {
     max-width: 100%;
     height: auto;
 }
 
+/* Imagens na seção 'comidas' e 'lazer' */
+.comidas img,
+.lazer img {
+    flex: 1;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+
+/* Ícone do Instagram */
+.instagram {
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+/* Alinhamento das imagens de lazer */
+.lazer-images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+/* Estilo das legendas das imagens */
+.lazer-images figure {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Rodapé */
 footer {
     text-align: center;
     background-color: #007bff;
     color: #fff;
-    padding: 10px;
+    padding: 20px 0;
 }
-.instagram {
-    margin-left: 10px;
+
+/* Estilo dos ícones das redes sociais */
+.social-icon {
+    width: 20px;
+    margin-right: 5px;
     vertical-align: middle;
+    filter: brightness(0) invert(1); /* Inverte a cor do ícone para branco */
+    transition: filter 0.3s ease-in-out;
+}
+
+/* Efeito de hover nos ícones das redes sociais */
+.social-icon:hover {
+    filter: brightness(1); /* Restaura a cor original ao passar o mouse */
+}
+
+/* Estilo dos itens das redes sociais */
+.social-item {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Nome de usuário nas redes sociais */
+.social-item p {
+    font-size: 14px;
+    margin: 0;
 }
