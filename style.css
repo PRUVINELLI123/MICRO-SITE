@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: arial sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
+}
+a {
+    text-decoration: none;
+    color: #007bff;
+    display: flex;
+    flex-direction: column;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#logo {
+    max-width: 100px;
+    height: auto;
+}
+
+h1 {
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.musicas, .comidas, .lazer {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+}
+.instagram {
+    margin-left: 10px;
+    vertical-align: middle;
+}
